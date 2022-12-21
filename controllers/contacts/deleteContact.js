@@ -8,7 +8,7 @@ const deleteContact = async (req, res, next) => {
     if (!result) {
       throw HttpError(404);
     }
-    res.json({ message: "contact deleted" });
+    res.json({ message: "Contact deleted" });
   } catch (error) {
     next(error);
   }

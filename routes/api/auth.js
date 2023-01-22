@@ -8,6 +8,8 @@ const router = express.Router();
 // singup
 router.post("/register", validateBody(schemas.registerSchema), ctrl.register);
 
+router.get("/verify/:verificationCode", ctrl.verify);
+
 // signin
 router.post("/login", validateBody(schemas.loginSchema), ctrl.login);
 
